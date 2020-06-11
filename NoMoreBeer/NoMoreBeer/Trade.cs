@@ -12,6 +12,14 @@ namespace NoMoreBeer
     public class Trade
     {
         /// <summary>
+        /// 매일 5만원
+        /// </summary>
+        public decimal DailyInvest = 50000.0M;
+
+
+        public decimal BuyAmount { get; set; }
+
+        /// <summary>
         /// 매수일
         /// </summary>
         public DateTime BuyOn { get; set; }
@@ -25,7 +33,10 @@ namespace NoMoreBeer
         /// 매도일
         /// </summary>
         public DateTime SellOn { get; set; }
+
+       
         
+
         /// <summary>
         /// 매도금액
         /// </summary>
@@ -35,10 +46,11 @@ namespace NoMoreBeer
         /// 수익률
         /// </summary>
         public decimal Rate { get; set; }
-
+        
         public override string ToString()
         {
-            return $"{BuyOn:d} : {BuyValue:N0} -> {SellValue:N0} ({Rate:P2})";
+            
+            return $"{BuyOn:d} : {DailyInvest:N0} -> {BuyValue:N0} -> {BuyAmount:N3} -> {SellValue:N0} ({Rate:P2})";
         }
     }
 }

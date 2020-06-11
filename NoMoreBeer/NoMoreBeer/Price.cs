@@ -32,6 +32,8 @@ namespace NoMoreBeer
         /// </summary>
         public decimal Rate { get; set; }
 
+        
+
         /// <summary>
         /// 문자열을 해석하여 Price 객체를 만든다.
         /// </summary>

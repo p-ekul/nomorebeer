@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\kccistc\\.nuget\\packages\\": {}
+    "C:\\Users\\LUKE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kccistc\\Desktop\\NoMoreBeer\\WinterIsComing\\WinterIsComing.csproj",
+      "projectUniqueName": "F:\\LIFE\\workwork\\prjj\\nomorebeer\\NoMoreBeer\\WinterIsComing\\WinterIsComing.csproj",
       "projectName": "WinterIsComing",
-      "projectPath": "C:\\Users\\kccistc\\Desktop\\NoMoreBeer\\WinterIsComing\\WinterIsComing.csproj",
-      "packagesPath": "C:\\Users\\kccistc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kccistc\\Desktop\\NoMoreBeer\\WinterIsComing\\obj\\",
+      "projectPath": "F:\\LIFE\\workwork\\prjj\\nomorebeer\\NoMoreBeer\\WinterIsComing\\WinterIsComing.csproj",
+      "packagesPath": "C:\\Users\\LUKE\\.nuget\\packages\\",
+      "outputPath": "F:\\LIFE\\workwork\\prjj\\nomorebeer\\NoMoreBeer\\WinterIsComing\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kccistc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LUKE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

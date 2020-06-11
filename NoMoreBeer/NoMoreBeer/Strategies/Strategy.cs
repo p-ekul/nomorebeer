@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace NoMoreBeer.Strategies
 {
@@ -18,18 +19,11 @@ namespace NoMoreBeer.Strategies
         public decimal SellSum { get; private set; }
         public decimal Rate { get; private set; }
 
-        public override string ToString()
-        {
-            StringWriter writer = new StringWriter();
-            foreach (var trade in Trades)
-            {
-                writer.WriteLine(trade);
-            }
+        public decimal TotalSum { get; private set; }
 
-            writer.WriteLine($"{SellSum:N0} - {BuySum:N0} = {SellSum - BuySum:N0} ({Rate:P2})");
+        public decimal BuyAmount { get; set; }
+        
 
-            return writer.ToString();
-        }
 
         internal void Trade(List<Price> prices)
         {
@@ -47,10 +41,36 @@ namespace NoMoreBeer.Strategies
             }
 
             // 총매수액 등을 구한다.
+            TotalSum = Trades.Sum(x => x.DailyInvest);
             BuySum = Trades.Sum(x => x.BuyValue);
             SellSum = Trades.Sum(x => x.SellValue);
-            Rate = BuySum.GetRate(SellSum);
+            BuyAmount = Trades.Sum(x => x.BuyAmount);
+
+            //Rate = Trades.Sum(x => 1 - x.BuyAmount);
+
         }
+
+
+        public override string ToString()
+        {
+            
+            StringWriter writer = new StringWriter();
+            foreach (var trade in Trades)
+            {
+                writer.WriteLine(trade);
+            }
+            
+            //writer.WriteLine($"\n {SellSum:N0} - {TotalSum:N0} - {BuySum:N0} = {SellSum - BuySum:N0} ({Rate:P2})");
+            writer.WriteLine($"\n총 투자금액 : {TotalSum:N0}");
+            writer.WriteLine($"총 주식 수 : {BuyAmount:N2}");
+            SellSum = 55000 * BuyAmount;
+            writer.WriteLine($"판매금액 : {SellSum:N0}");
+            writer.WriteLine($"수익률 : {SellSum/TotalSum:P2}");
+
+            return writer.ToString();
+        }
+
+        
 
         /// <summary>
         /// 조건에 맞는 주식을 매수한다.
@@ -63,6 +83,8 @@ namespace NoMoreBeer.Strategies
             Trade trade = new Trade();
             trade.BuyOn = price.Date;
             trade.BuyValue = price.Value;
+            trade.BuyAmount = trade.DailyInvest / price.Value;
+
 
             Trades.Add(trade);
         }

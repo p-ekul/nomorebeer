@@ -1,0 +1,13 @@
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\bin\Debug\netcoreapp3.1\WinterIsComing.exe
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\bin\Debug\netcoreapp3.1\WinterIsComing.deps.json
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\bin\Debug\netcoreapp3.1\WinterIsComing.runtimeconfig.json
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\bin\Debug\netcoreapp3.1\WinterIsComing.runtimeconfig.dev.json
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\bin\Debug\netcoreapp3.1\WinterIsComing.dll
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\bin\Debug\netcoreapp3.1\WinterIsComing.pdb
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\obj\Debug\netcoreapp3.1\WinterIsComing.csprojAssemblyReference.cache
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\obj\Debug\netcoreapp3.1\WinterIsComing.AssemblyInfoInputs.cache
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\obj\Debug\netcoreapp3.1\WinterIsComing.AssemblyInfo.cs
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\obj\Debug\netcoreapp3.1\WinterIsComing.csproj.CoreCompileInputs.cache
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\obj\Debug\netcoreapp3.1\WinterIsComing.dll
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\obj\Debug\netcoreapp3.1\WinterIsComing.pdb
+F:\LIFE\workwork\prjj\nomorebeer\NoMoreBeer\WinterIsComing\obj\Debug\netcoreapp3.1\WinterIsComing.genruntimeconfig.cache
